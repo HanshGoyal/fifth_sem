@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let valid;
+        $(document).ready(function(){
+            $('#submit').on('click',function(){
+                let pwd=$('#pwd').val();
+                if($('#name').val()==''){
+                    alert('Please enter name');
+                }
+                var reg=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/;
+                let val=reg.test(pwd);
+                if(!val){
+                    alert('Password must contain atleast 8 characters, 1 uppercase and 1 number');
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="fname">First name:</label> <br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label> <br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" name="email"><br>
+        <label for="pwd">Password:</label> <br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <input type="button" id="submit" value="Submit" >
+    </form>
+</body>
+</html>
