@@ -1,0 +1,50 @@
+li {
+    color: darkblue;
+    margin: 5px;
+    list-style-type: none;
+    }
+    .myDiv {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    }
+    .button1
+    {
+    border-radius: 50%;
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    .stock::before
+    {
+    background-color: #4224ca;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    content:"In Stock"
+    }
+    .unavilable::before
+    {
+    background-color: #c2155a;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    content:"Un avilable";
+    }
